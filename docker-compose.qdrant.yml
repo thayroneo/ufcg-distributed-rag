@@ -1,0 +1,27 @@
+services:
+  qdrant_eletrica:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_eletrica
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+    volumes:
+      - ./qdrant_storage/eletrica:/qdrant/storage
+
+  qdrant_medicina:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_medicina
+    restart: unless-stopped
+    ports:
+      - "6334:6333"
+    volumes:
+      - ./qdrant_storage/medicina:/qdrant/storage
+
+  qdrant_computacao:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_computacao
+    restart: unless-stopped
+    ports:
+      - "6335:6333"
+    volumes:
+      - ./qdrant_storage/computacao:/qdrant/storage

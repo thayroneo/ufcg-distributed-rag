@@ -1,0 +1,7 @@
+node: computacao
+label: "Computação"
+department: "Ciência da Computação"
+source: "DSpace/UFCG"
+collections:
+  col_riufcg_47: "Mestrado em Ciência da Computação"
+  col_riufcg_48: "Doutorado em Ciência da Computação"

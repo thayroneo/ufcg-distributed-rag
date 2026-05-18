@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+
+*.ipynb
+*.pdf
+*.zip
+
+qdrant_storage/
+nodes/*/raw/
+nodes/*/extracted_text/

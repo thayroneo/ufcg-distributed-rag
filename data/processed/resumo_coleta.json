@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-05-17T00:49:55.315118+00:00",
+  "endpoint": "https://dspace.sti.ufcg.edu.br/oai/request",
+  "source": "DSpace/UFCG",
+  "limit_per_node": 20,
+  "selection_rule": "registros mais recentes por coleção",
+  "nodes": [
+    {
+      "node": "computacao",
+      "label": "Computação",
+      "target_limit": 20,
+      "target_by_collection": {
+        "col_riufcg_47": 10,
+        "col_riufcg_48": 10
+      },
+      "selection_rule": "itens mais recentes por coleção",
+      "collections": {
+        "col_riufcg_47": "Mestrado em Ciência da Computação",
+        "col_riufcg_48": "Doutorado em Ciência da Computação"
+      }
+    },
+    {
+      "node": "eletrica",
+      "label": "Engenharia Elétrica",
+      "target_limit": 20,
+      "target_by_collection": {
+        "col_riufcg_49": 10,
+        "col_riufcg_50": 10
+      },
+      "selection_rule": "itens mais recentes por coleção",
+      "collections": {
+        "col_riufcg_49": "Mestrado em Engenharia Elétrica",
+        "col_riufcg_50": "Doutorado em Engenharia Elétrica"
+      }
+    },
+    {
+      "node": "quimica",
+      "label": "Engenharia Química",
+      "target_limit": 20,
+      "target_by_collection": {
+        "col_riufcg_66": 10,
+        "col_riufcg_67": 10
+      },
+      "selection_rule": "itens mais recentes por coleção",
+      "collections": {
+        "col_riufcg_66": "Mestrado em Engenharia Química",
+        "col_riufcg_67": "Doutorado em Engenharia Química"
+      }
+    }
+  ],
+  "important_paths": {
+    "data_metadata": "data\\metadata",
+    "data_pdf_links": "data\\pdf_links",
+    "data_processed": "data\\processed",
+    "nodes": "nodes"
+  }
+}

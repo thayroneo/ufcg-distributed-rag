@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-05-17T01:26:45.859087+00:00",
+  "scope": "vector_databases_only",
+  "collection_name": "documentos",
+  "embedding_model": "intfloat/multilingual-e5-base",
+  "embedding_model_note": "Use prefixo 'query: ' para consultas e 'passage: ' para documentos/chunks.",
+  "embedding_vector_size": 768,
+  "embedding_distance": "cosine",
+  "embedding_normalized": true,
+  "device_used": "cuda",
+  "batch_size": 32,
+  "nodes": [
+    {
+      "node": "eletrica",
+      "label": "Engenharia Elétrica",
+      "url": "http://localhost:6333",
+      "collection_name": "documentos",
+      "chunks_path": "nodes\\eletrica\\chunks.jsonl",
+      "storage_path": "qdrant_storage\\eletrica",
+      "chunks_read": 2155,
+      "points_inserted": 2155,
+      "qdrant_vectors_count": null,
+      "qdrant_points_count": 2155
+    },
+    {
+      "node": "quimica",
+      "label": "Engenharia Química",
+      "url": "http://localhost:6334",
+      "collection_name": "documentos",
+      "chunks_path": "nodes\\quimica\\chunks.jsonl",
+      "storage_path": "qdrant_storage\\quimica",
+      "chunks_read": 2186,
+      "points_inserted": 2186,
+      "qdrant_vectors_count": null,
+      "qdrant_points_count": 2186
+    },
+    {
+      "node": "computacao",
+      "label": "Computação",
+      "url": "http://localhost:6335",
+      "collection_name": "documentos",
+      "chunks_path": "nodes\\computacao\\chunks.jsonl",
+      "storage_path": "qdrant_storage\\computacao",
+      "chunks_read": 2161,
+      "points_inserted": 2161,
+      "qdrant_vectors_count": null,
+      "qdrant_points_count": 2161
+    }
+  ],
+  "payload_index_fields": [
+    "node",
+    "doc_id",
+    "chunk_id",
+    "department",
+    "program",
+    "document_type",
+    "collection_set_spec",
+    "collection_name",
+    "year"
+  ]
+}

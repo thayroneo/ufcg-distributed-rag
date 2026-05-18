@@ -1,0 +1,7 @@
+node: quimica
+label: "Engenharia Química"
+department: "Engenharia Química"
+source: "DSpace/UFCG"
+collections:
+  col_riufcg_66: "Mestrado em Engenharia Química"
+  col_riufcg_67: "Doutorado em Engenharia Química"
