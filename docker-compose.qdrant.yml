@@ -8,14 +8,14 @@ services:
     volumes:
       - ./qdrant_storage/eletrica:/qdrant/storage
 
-  qdrant_medicina:
+  qdrant_quimica:
     image: qdrant/qdrant:latest
-    container_name: qdrant_medicina
+    container_name: qdrant_quimica
     restart: unless-stopped
     ports:
       - "6334:6333"
     volumes:
-      - ./qdrant_storage/medicina:/qdrant/storage
+      - ./qdrant_storage/quimica:/qdrant/storage
 
   qdrant_computacao:
     image: qdrant/qdrant:latest
