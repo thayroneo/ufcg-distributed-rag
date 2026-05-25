@@ -42,6 +42,18 @@ NODES: Dict[str, Dict[str, Any]] = {
         "chunks_path": PROJECT_ROOT / "nodes" / "computacao" / "chunks.jsonl",
         "storage_path": PROJECT_ROOT / "qdrant_storage" / "computacao",
     },
+    "historia": {
+        "label": "Historia",
+        "url": "http://localhost:6336",
+        "chunks_path": PROJECT_ROOT / "nodes" / "historia" / "chunks.jsonl",
+        "storage_path": PROJECT_ROOT / "qdrant_storage" / "historia",
+    },
+    "linguagem_ensino": {
+        "label": "Linguagem e Ensino",
+        "url": "http://localhost:6337",
+        "chunks_path": PROJECT_ROOT / "nodes" / "linguagem_ensino" / "chunks.jsonl",
+        "storage_path": PROJECT_ROOT / "qdrant_storage" / "linguagem_ensino",
+    },
 }
 
 PAYLOAD_INDEXES = {
@@ -296,6 +308,8 @@ def main() -> None:
     print("Eng. Elétrica: http://localhost:6333/dashboard")
     print("Eng. Química: http://localhost:6334/dashboard")
     print("Computação: http://localhost:6335/dashboard")
+    print("Historia: http://localhost:6336/dashboard")
+    print("Linguagem e Ensino: http://localhost:6337/dashboard")
 
 if __name__ == "__main__":
     main()

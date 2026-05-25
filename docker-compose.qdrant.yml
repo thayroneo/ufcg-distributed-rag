@@ -25,3 +25,21 @@ services:
       - "6335:6333"
     volumes:
       - ./qdrant_storage/computacao:/qdrant/storage
+
+  qdrant_historia:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_historia
+    restart: unless-stopped
+    ports:
+      - "6336:6333"
+    volumes:
+      - ./qdrant_storage/historia:/qdrant/storage
+
+  qdrant_linguagem_ensino:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_linguagem_ensino
+    restart: unless-stopped
+    ports:
+      - "6337:6333"
+    volumes:
+      - ./qdrant_storage/linguagem_ensino:/qdrant/storage

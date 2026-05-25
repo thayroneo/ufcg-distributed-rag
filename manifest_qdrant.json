@@ -1,9 +1,9 @@
 {
-  "created_at": "2026-05-17T01:26:45.859087+00:00",
+  "created_at": "2026-05-25T22:11:08.954847+00:00",
   "scope": "vector_databases_only",
   "collection_name": "documentos",
   "embedding_model": "intfloat/multilingual-e5-base",
-  "embedding_model_note": "Use prefixo 'query: ' para consultas e 'passage: ' para documentos/chunks.",
+  "embedding_model_note": "Use prefixo 'query: ' para consultas e 'passage: ' para documentos/chunks",
   "embedding_vector_size": 768,
   "embedding_distance": "cosine",
   "embedding_normalized": true,
@@ -45,6 +45,30 @@
       "points_inserted": 2161,
       "qdrant_vectors_count": null,
       "qdrant_points_count": 2161
+    },
+    {
+      "node": "historia",
+      "label": "Historia",
+      "url": "http://localhost:6336",
+      "collection_name": "documentos",
+      "chunks_path": "nodes\\historia\\chunks.jsonl",
+      "storage_path": "qdrant_storage\\historia",
+      "chunks_read": 7126,
+      "points_inserted": 7126,
+      "qdrant_vectors_count": null,
+      "qdrant_points_count": 7126
+    },
+    {
+      "node": "linguagem_ensino",
+      "label": "Linguagem e Ensino",
+      "url": "http://localhost:6337",
+      "collection_name": "documentos",
+      "chunks_path": "nodes\\linguagem_ensino\\chunks.jsonl",
+      "storage_path": "qdrant_storage\\linguagem_ensino",
+      "chunks_read": 5638,
+      "points_inserted": 5638,
+      "qdrant_vectors_count": null,
+      "qdrant_points_count": 5638
     }
   ],
   "payload_index_fields": [
